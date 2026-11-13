@@ -14,7 +14,7 @@ THEN
 RESPONSE #100
 CreateItem("MWkihosy",1,0,0)
 CreateVisualEffectObject("SPDISPMA","MWKido")
-DisplayStringHead(Myself, ~Once again Kido defiles the rules, because Kido just received a powerful holy symbol from Cyric. It is especially made to suit Kido's special qualities.~)
+DisplayStringHead(Myself, ~基多又一次把规矩踩了个遍，因为基多刚得了希瑞克赐下的一枚强大圣徽。它专为契合基多的特殊特质而造。~)
 SetGlobal("gotkhosy25","LOCALS",1)
 END
 

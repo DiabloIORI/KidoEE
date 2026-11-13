@@ -35,7 +35,7 @@ THEN
 RESPONSE #100
 CreateItem("MWkihosy",1,0,0)
 CreateVisualEffectObject("SPDISPMA","MWKido")
-DisplayStringHead(Myself, ~Once again Kido defys the rules, because Kido just received a powerful holy symbol from Cyric. It is especially made to suit Kido's special qualities.~)
+DisplayStringHead(Myself, ~基多又一次把规矩踩了个遍，因为基多刚得了希瑞克赐下的一枚强大圣徽。它专为契合基多的特殊特质而造。~)
 SetGlobal("gotkhosy","LOCALS",1)
 END
 
@@ -46,7 +46,7 @@ Global("MWKGetHabib","LOCALS",0)
 THEN
 RESPONSE #100
 SetGlobal("MWKGetHabib","LOCALS",1)
-DisplayStringHead(Myself, ~No, no, no. Let me show you how it is done. Throwing daggers away!~)
+DisplayStringHead(Myself, ~不不不。让我教你这活儿该怎么干。飞刀走起！~)
 PlaySound("MWKido6")
 Attack("Habib")
 END
@@ -241,7 +241,7 @@ Global("Nagdog","GLOBAL",1)
 THEN
 RESPONSE #100
 SetGlobal("Nagdog","GLOBAL",2)
-DisplayStringWait("MWKido",~Ahh, a cute little doggie...~)
+DisplayStringWait("MWKido",~啊，好可爱的小狗狗……~)
 Wait(2)
 ActionOverride("kdog",enemy())
 END
@@ -328,7 +328,7 @@ See("Risa")
 !See("Arenthis")
 THEN
 RESPONSE #100
-DisplayStringWait(Myself,~That was enough acting. Come here little girl. I have friend who can not wait to meet you.~)
+DisplayStringWait(Myself,~演够了。过来吧小姑娘。我有个朋友等不及要见你。~)
 ActionOverride("Risa",DestroySelf())
 GiveItemCreate("MWChSacr","MWKido",1,1,0)
 END
@@ -339,7 +339,7 @@ THEN
 RESPONSE #100
 ActionOverride("MWKido",LeaveParty())
 ActionOverride("MWKido",Enemy())
-DisplayStringWait(Myself,~I will not let you kill Dolf, <CHARNAME>! Throwing daggers away!~)
+DisplayStringWait(Myself,~<CHARNAME>，我不会让你杀多尔夫！飞刀走起！~)
 PlaySound("MWKido6")
 ActionOverride("MWKido",Attack(Player1))
 ActionOverride("MWDolf",Attack(Player1))
